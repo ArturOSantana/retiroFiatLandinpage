@@ -1,0 +1,72 @@
+.event-share {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem 1rem;
+  margin-top: 1.15rem;
+}
+
+.event-share__button {
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  padding: 0.65rem 1rem;
+  border: 1px solid rgba(217, 180, 90, 0.75);
+  border-radius: 999px;
+  background: rgba(42, 5, 8, 0.58);
+  color: #f0d99c;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.event-share__button:hover {
+  border-color: #edcc76;
+  background: #741b28;
+  color: #fff3d4;
+}
+
+.event-share__button:focus-visible {
+  outline: 3px solid #edcc76;
+  outline-offset: 3px;
+}
+
+.event-share__icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  flex: 0 0 auto;
+}
+
+.event-share__status {
+  margin: 0;
+  color: #f0d99c;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 40rem) {
+  .event-share {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.55rem;
+    margin-top: 1rem;
+  }
+
+  .event-share__button {
+    min-height: 3rem;
+    padding-inline: 0.9rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .event-share__button {
+    transition: none;
+  }
+}
