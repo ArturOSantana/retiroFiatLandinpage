@@ -713,6 +713,15 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .registration-step__small { font-size: .88rem; }
 .registration-step .button { margin-top: .5rem; }
 
+.registration-step__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: .5rem;
+}
+
+.registration-step__actions .button { margin-top: 0; }
+
 .button--outline {
   border-color: var(--gold);
   background: transparent;
@@ -990,6 +999,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .registration-step p { font-size: .93rem; }
   .registration-step__small { font-size: .82rem !important; }
   .registration-step .button { width: 100%; }
+  .registration-step__actions { flex-direction: column; }
   .pix-ticket { padding: .9rem .8rem; }
   .pix-ticket__label { font-size: .61rem; }
   .pix-ticket__key { font-size: 1.1rem; }
